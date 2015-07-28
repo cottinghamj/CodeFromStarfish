@@ -1,0 +1,13 @@
+package FruitLoops;
+
+public class Apples {
+
+	public static void main(String[] args) {
+		int numApples = 10;
+		while(numApples > 0){
+			System.out.println("You ate your "+ (10 - numApples + 1) + "th apple!");
+			numApples -= 1;
+		}
+	}
+
+}

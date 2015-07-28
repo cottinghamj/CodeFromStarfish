@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class SwagginWclass {
+
+	public static void main(String[] args) {
+		Scanner myscanner = new Scanner(System.in);
+		String input;
+		
+		System.out.println("Hello Player! What is your name?");
+		input = myscanner.nextLine();
+		System.out.println("Welcome to my family, " + input + " (Puts hand on shoulder)");
+
+	}
+
+}

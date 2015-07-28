@@ -1,0 +1,12 @@
+
+public class Vars {
+
+	public static void main(String[] args) {
+		// type name = value;
+		
+		int x = 32;
+		
+		
+	}
+
+}

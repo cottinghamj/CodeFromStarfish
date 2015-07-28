@@ -1,0 +1,14 @@
+package FruitLoops;
+
+public class MethodReview {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String save = name("Starfish");
+
+	}
+
+	public static String name(String name){
+		return "Your name is "+ name;
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+public class RandClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rand = (int) (Math.random() * 20);  // Get a random number
+		Scanner input = new Scanner(System.in);
+		int guess = input.nextInt();			// Gets the player's guess at the random number
+	
+		if(rand == guess){
+			System.out.println("You get cake!");
+		}
+	}
+
+}

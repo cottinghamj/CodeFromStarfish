@@ -1,0 +1,29 @@
+package FruitLoops;
+
+public class Apples {
+
+	public static void main(String[] args) {
+		int numApples = 1000;
+		String ending = "st";
+		while(numApples > 0){
+			
+			if(numApples % 10 == 0){  // Because we are one off below
+				ending = "st";
+			}else{
+				ending = "th";
+			}
+			
+			System.out.println("You ate your "+ (1000 - numApples + 1) + ending + " apple!");
+			numApples -= 1;
+		}
+		System.out.println("You now have a tummy ache :<");
+		
+		
+		
+		for(int index = 0; ; index++){
+			System.out.println(index);
+		}
+		
+	}
+
+}

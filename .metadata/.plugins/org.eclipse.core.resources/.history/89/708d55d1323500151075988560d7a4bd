@@ -1,0 +1,16 @@
+package Variables;
+
+public class BasicTypes {
+	public static void main(String[] args){
+		int x;
+		x = 12;
+		x = x + 24; // 36
+		System.out.println(x);
+		
+		double y = 1.1;
+		
+		System.out.println(x+y);
+		
+		String v = "asdlaisjdlksajd";
+	}
+}

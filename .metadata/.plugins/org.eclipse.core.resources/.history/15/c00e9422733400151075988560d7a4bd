@@ -1,0 +1,15 @@
+package printPackage;
+
+public class MyFirstPrint {
+
+	public static void main(String[] args) {
+			System.out.println("Hello, World!");
+			System.out.println(20);
+			System.out.println("20");
+			System.out.println("\"I'm in quotes\"");
+			System.out.println(20 - 2);
+			System.out.println("20 - 2");
+			System.out.println("This is a new");
+	}
+
+}

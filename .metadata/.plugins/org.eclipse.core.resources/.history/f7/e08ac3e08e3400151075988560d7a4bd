@@ -1,0 +1,18 @@
+// packages would go at the very to of your code
+import java.util.*;
+import java.util.Scanner;
+public class randNumbers {
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int lowestNum = scan.nextInt();
+		int highestNum = scan.nextInt();
+		int range = highestNum - lowestNum;
+	
+		int rand = (int) (Math.random() * range) + lowestNum ;
+		System.out.println(rand);
+		
+	}
+
+}

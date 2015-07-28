@@ -1,0 +1,11 @@
+
+public class Methods {
+
+	public static void main(String[] args) {
+		
+	}
+	public static int add(int x, int y){
+		int answer = x + y;
+		return answer;
+	}
+}

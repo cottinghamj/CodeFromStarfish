@@ -1,0 +1,9 @@
+package printPackage;
+
+public class MyFirstPrin {
+
+	public static void main(String[] args) {
+			
+	}
+
+}

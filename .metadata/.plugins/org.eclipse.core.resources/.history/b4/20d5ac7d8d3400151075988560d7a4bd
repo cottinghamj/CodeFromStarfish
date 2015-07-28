@@ -1,0 +1,10 @@
+// packages would go at the very to of your code
+import java.util.*;
+public class randNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

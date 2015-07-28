@@ -1,0 +1,37 @@
+import java.util.*;
+public class RandClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rand = (int) (Math.random() * 20);  // Get a random number
+		Scanner input = new Scanner(System.in);
+		
+		int guess = -1;
+//		while(rand!=guess){
+//			guess = input.nextInt();			// Gets the player's guess at the random number
+//
+//			if(rand == guess){
+//				System.out.println("You get cake!");
+//			}
+//		}
+		
+		int i = 0;
+		while(i < 5){
+			System.out.println(i);
+			if ( i % 2 == 1)
+				i = i + 1;
+			else
+				i = i + 2;
+		}
+		System.out.println("You finished the i loop");
+		
+		// Example of a for loop
+		for(int a = 0; a < 5; a = a + 1){
+			System.out.println(a);
+		}
+		
+		
+		System.out.println("You finished the full game!");
+	}
+
+}

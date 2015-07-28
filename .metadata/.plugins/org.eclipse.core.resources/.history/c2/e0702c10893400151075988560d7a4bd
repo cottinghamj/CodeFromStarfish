@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class SwagginWclass {
+
+	public static void main(String[] args) {
+		Scanner myscanner = new Scanner(System.in);
+		String input;
+		
+		input = myscanner.nextLine();
+
+	}
+
+}

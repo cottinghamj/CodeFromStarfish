@@ -1,0 +1,11 @@
+import java.util.*;
+public class RandClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rand = (int) (Math.random() * 20);
+		Scanner input = new Scanner(System.in);
+		int guess = input.nextInt();
+	}
+
+}

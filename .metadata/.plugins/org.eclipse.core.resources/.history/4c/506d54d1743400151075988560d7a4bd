@@ -1,0 +1,19 @@
+
+public class Vars {
+
+	public static void main(String[] args) {
+		// type name = value;
+		
+		int x = 32;    // stores integers
+		double y = 1.12323232323;		// stores decimals
+		String a = "This is a string";
+		boolean b = true;
+		char e = 'e';
+		
+		
+		System.out.println(x);
+		System.out.println(e + 0);
+		
+	}
+
+}
