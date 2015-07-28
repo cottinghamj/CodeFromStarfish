@@ -1,0 +1,22 @@
+
+public class Player {
+
+	// Variable - Attributes
+	
+	
+	// Constructor - build the player object
+	
+	
+	
+	// Methods - define player action
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	
+
+}

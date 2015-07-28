@@ -1,0 +1,23 @@
+
+public class Player {
+
+	// Variable - Attributes
+	public int health, strength, posX, posY;
+	public String name;
+	
+	// Constructor - build the player object
+	
+	
+	
+	// Methods - define player action
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	
+
+}

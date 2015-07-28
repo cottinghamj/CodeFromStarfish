@@ -30,4 +30,5 @@ public class MethodReview {
 		System.out.println("Your total sum was: " + sum);
 		
 	}
+	
 }

@@ -1,0 +1,22 @@
+
+public class Enemy {
+	// Variable - Attributes
+	public int health, strength, posX, posY;
+	public String name;
+	
+	// Constructor - build the player object
+	public Enemy(String n){
+		health = 100;
+		strength = 5;
+		posX = 0;
+		posY = 0;
+		name = n;
+	}
+	
+	public static void main(String[] args){
+		Enemy e1 = new Enemy("boB");
+		
+	}
+	
+	
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Enemy {
+	// Variable - Attributes
+	public int health, strength, posX, posY;
+	public String name;
+	
+	// Constructor - build the player object
+	public Enemy(String n){
+		health = 100;
+		strength = 5;
+		posX = 0;
+		posY = 0;
+		name = n;
+		
+		System.out.println(n + " has just been brought into existence! ;D");
+	}
+	
+	public boolean isAlive(){
+		return health > 0;
+	}
+	
+	public void fight(Player p){
+		System.out.println("You come across " + name + ". He thinks he wants to fight you. \nYou engage!");
+		Scanner scnr = new Scanner(System.in);
+		String choice;
+		while(p.isAlive() && isAlive()){
+			choice = scnr.nextLine();
+			if(choice.equalsIgnoreCase("punch") || choice.equalsIgnoreCase("kick")){
+				health -= p.strength;
+			}else if(choice.equalsIgnoreCase("flee")){
+				
+			}
+		}
+			
+	}
+	
+	public static void main(String[] args){
+		
+	}
+	
+	
+}

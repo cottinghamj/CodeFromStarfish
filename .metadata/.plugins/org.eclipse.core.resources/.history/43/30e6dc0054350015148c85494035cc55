@@ -1,0 +1,17 @@
+
+public class Item {
+	
+	public String name;
+	public int boostAmount;
+	
+	public Item(String n, int b){
+		name = n;
+		boostAmount = b;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

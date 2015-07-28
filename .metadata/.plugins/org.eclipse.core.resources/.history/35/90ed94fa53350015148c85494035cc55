@@ -1,0 +1,16 @@
+
+public class Item {
+	
+	public String name;
+	public int boostAmount;
+	
+	public Item(){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

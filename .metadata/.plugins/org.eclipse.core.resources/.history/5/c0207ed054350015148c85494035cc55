@@ -1,0 +1,24 @@
+
+public class Item {
+	
+	public String name;
+	public int hltBoost;  // health
+	public int strBoost;
+	
+	public Item(String n, int h, int s){
+		name = n;
+		hltBoost = h;
+		strBoost = s;
+	}
+	
+	public Player boost(Player plyr){
+		plyr.health += hltBoost;
+		plyr.strength += strBoost;
+		return plyr;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+}
