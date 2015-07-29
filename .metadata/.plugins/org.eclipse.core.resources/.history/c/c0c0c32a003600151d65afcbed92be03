@@ -1,0 +1,20 @@
+package lesson1graphics;
+
+import processing.core.PApplet;
+
+
+public class Lesson1Graphics extends PApplet {
+
+	public void setup() {
+		
+	}
+
+	// Think of draw methods as having a while(true) loop around it
+	public void draw() {
+		
+	}
+	
+	public void circle(){
+		ellipse(400, 400, 30, 30);
+	}
+}

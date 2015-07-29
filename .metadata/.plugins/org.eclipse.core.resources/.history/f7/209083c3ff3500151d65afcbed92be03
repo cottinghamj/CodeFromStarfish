@@ -1,0 +1,13 @@
+package lesson1graphics;
+
+import processing.core.PApplet;
+
+
+public class Lesson1Graphics extends PApplet {
+
+	public void setup() {
+	}
+
+	public void draw() {
+	}
+}

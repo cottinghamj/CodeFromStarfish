@@ -1,0 +1,8 @@
+
+public class Shirt extends Item{
+	
+	public Shirt(){
+		
+	}
+	
+}

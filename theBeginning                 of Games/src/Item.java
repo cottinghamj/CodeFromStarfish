@@ -3,7 +3,7 @@ public class Item {
 	
 	public String name;
 	public int hltBoost;  // health
-	public int strBoost;
+	public int strBoost; 
 	
 	public Item(String n, int h, int s){
 		name = n;
@@ -12,7 +12,7 @@ public class Item {
 	}
 	
 	public void boost(Player plyr){
-		System.out.println("You just got "+ hltBoost + " health and " + strBoost + " strength");
+		System.out.println("You just got a " + name + " with "+ hltBoost + " health and " + strBoost + " strength");
 		plyr.boostHealth(hltBoost);
 		plyr.strength += strBoost;
 	}

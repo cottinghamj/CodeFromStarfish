@@ -58,6 +58,13 @@ public class Player {
 		
 		p1.health += 100;
 		Enemy e1 = new Enemy("qoB");
+		
+		Shirt s1 = new Shirt();
+		s1.boost(p1);
+		
+		
+		
+		
 		e1.fight(p1);
 		
 		
