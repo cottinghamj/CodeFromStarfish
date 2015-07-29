@@ -5,8 +5,6 @@ public class Enemy {
 	public int health, strength, posX, posY;
 	public String name;
 	
-	public int obliterateNum;
-	
 	// Constructor - build the player object
 	public Enemy(String n){
 		health = 100;
@@ -14,8 +12,6 @@ public class Enemy {
 		posX = 0;
 		posY = 0;
 		name = n;
-		
-		obliterateNum = 1;
 		
 		System.out.println(n + " has just been brought into existence! ;D");
 	}
@@ -39,11 +35,11 @@ public class Enemy {
 				System.out.println("You died!");
 				while(true){}
 			}else if(choice.equalsIgnoreCase("obliterate")){
-				if(obliterateNum > 0){
+				if(p.obliterateNum > 0){
 					
 					health -= 50;
 					System.out.println("You just tried to obliterate your enemy. Their health is now " + health);
-					obliterateNum--;
+					p.obliterateNum--;
 				}
 			}
 			

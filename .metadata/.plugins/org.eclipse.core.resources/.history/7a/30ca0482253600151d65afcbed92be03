@@ -1,0 +1,15 @@
+
+public class AnArrayofProblems {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] numArray = new int[5]; // index this array from 0 -> 4
+		
+		numArray[0] = 30; // Set the first element in the array to 30
+		numArray[1] = 30;
+		numArray[2] = 40;
+		numArray[3] = 60;
+		numArray[4] = 20;
+	}
+
+}
