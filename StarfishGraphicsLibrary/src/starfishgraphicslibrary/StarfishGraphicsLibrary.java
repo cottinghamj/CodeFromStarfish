@@ -8,12 +8,15 @@ public class StarfishGraphicsLibrary extends PApplet {
 	Player p1;
 	Obstacle o1;
 	int timeToWait = 200, lastTime;
+	
+	Obstacle [] arrayOfObstacles;
 
 	public void setup() {
 		size(700, 700);
 		p1 = new Player(200, 200, "Starfish", this);
 		o1 = new Obstacle(300, 300, 200, 100, this);
 		lastTime = millis();
+		arrayOfObstacles = o1.genRandomEnemies(1000);		// This is the code to generate a bunch of enemies
 	}
 
 	public void draw() {
@@ -21,6 +24,13 @@ public class StarfishGraphicsLibrary extends PApplet {
 		p1.draw();
 		//o1.draw();
 		p1.drawObstacles();
+		
+		//If you want to draw your entire array of enemies
+		for(int i = 0; i < arrayOfObstacles.length; i++){
+			arrayOfObstacles[i].draw();
+		}
+		
+		
 		
 	}
 
