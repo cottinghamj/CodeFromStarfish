@@ -19,10 +19,6 @@ public class StarfishGraphicsLibrary extends PApplet {
 	public void draw() {
 		background(0,20,200);
 		p1.draw();
-		if(millis() - lastTime > timeToWait){
-			
-			lastTime = millis();
-		}
 		//o1.draw();
 		p1.drawObstacles();
 		

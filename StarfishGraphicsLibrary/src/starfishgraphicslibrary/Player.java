@@ -125,7 +125,7 @@ public class Player {
 			jump();
 		}
 	}
-
+	// TEST METHOD: DO NOT USE. ONLY FOR DEMONSTRATION
 	public void colliding(){
 
 		if((posX + radius - obs[0].posX) == 0 && posY + radius > obs[0].posY && posY - radius < obs[0].posY + obs[0].height)
@@ -138,6 +138,47 @@ public class Player {
 			moveUpVar = false;
 
 	}
+	
+	//This method is what you can use to check if you are colliding with an obstacle
+	public boolean colliding(Obstacle o){
+
+		// Check if colliding on right
+		if((posX + radius - o.posX) == 0 && posY + radius > o.posY && posY - radius < o.posY + o.height)
+			return true;
+		// Check if colliding on left
+		if(posX - radius == o.posX + o.width && posY + radius > o.posY && posY - radius < o.posY + o.height)
+			return true;
+		// Check if colliding on top
+		if(posY + radius == o.posY && posX + radius > o.posX && posX - radius < o.posX + o.width)
+			return true;
+		// Check if colliding on bottom
+		if(posY - radius == o.posY + o.height && posX + radius > o.posX && posX - radius < o.posX + o.width)
+			return true;
+		return false; // If you reach this point, that means that you are not colliding on either side of the obstacle
+
+	}
+	
+	// This handy methods just lets you pass an array of objects into and see if you are colliding with anyone
+	public boolean colliding(Obstacle[] o){
+		
+		for(int i = 0; i < o.length; i++){
+			// Check if colliding on right
+			if((posX + radius - o[i].posX) == 0 && posY + radius > o[i].posY && posY - radius < o[i].posY + o[i].height)
+				return true;
+			// Check if colliding on left
+			if(posX - radius == o[i].posX + o[i].width && posY + radius > o[i].posY && posY - radius < o[i].posY + o[i].height)
+				return true;
+			// Check if colliding on top
+			if(posY + radius == o[i].posY && posX + radius > o[i].posX && posX - radius < o[i].posX + o[i].width)
+				return true;
+			// Check if colliding on bottom
+			if(posY - radius == o[i].posY + o[i].height && posX + radius > o[i].posX && posX - radius < o[i].posX + o[i].width)
+				return true;
+		}
+		return false; // If you reach this point, that means that you are not colliding on either side of the obstacle
+
+	}
+	
 
 	public void moveLeft(){
 		posX -= speed;
@@ -171,3 +212,4 @@ public class Player {
 
 
 }
+
